@@ -1,0 +1,133 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'fsm:inst19|y_Q.I'
+Slack : -11.298
+TNS   : -11.298
+
+Type  : Slow Model Setup 'score:inst8|freq_divider_1hz:comb_3|out'
+Slack : -1.661
+TNS   : -26.333
+
+Type  : Slow Model Setup 'CLOCK_50'
+Slack : -1.109
+TNS   : -3.326
+
+Type  : Slow Model Setup 'inst14|mypll|altpll_component|pll|clk[0]'
+Slack : 31.633
+TNS   : 0.000
+
+Type  : Slow Model Hold 'CLOCK_50'
+Slack : -2.520
+TNS   : -4.755
+
+Type  : Slow Model Hold 'inst14|mypll|altpll_component|pll|clk[0]'
+Slack : 0.516
+TNS   : 0.000
+
+Type  : Slow Model Hold 'score:inst8|freq_divider_1hz:comb_3|out'
+Slack : 0.526
+TNS   : 0.000
+
+Type  : Slow Model Hold 'fsm:inst19|y_Q.I'
+Slack : 5.562
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'fsm:inst19|y_Q.I'
+Slack : -4.443
+TNS   : -4.443
+
+Type  : Slow Model Recovery 'CLOCK_50'
+Slack : 17.950
+TNS   : 0.000
+
+Type  : Slow Model Removal 'CLOCK_50'
+Slack : 1.735
+TNS   : 0.000
+
+Type  : Slow Model Removal 'fsm:inst19|y_Q.I'
+Slack : 3.877
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'score:inst8|freq_divider_1hz:comb_3|out'
+Slack : -0.500
+TNS   : -16.000
+
+Type  : Slow Model Minimum Pulse Width 'fsm:inst19|y_Q.I'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
+Slack : 7.620
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'inst14|mypll|altpll_component|pll|clk[0]'
+Slack : 17.873
+TNS   : 0.000
+
+Type  : Fast Model Setup 'fsm:inst19|y_Q.I'
+Slack : -4.978
+TNS   : -4.978
+
+Type  : Fast Model Setup 'score:inst8|freq_divider_1hz:comb_3|out'
+Slack : -0.279
+TNS   : -4.287
+
+Type  : Fast Model Setup 'CLOCK_50'
+Slack : 0.112
+TNS   : 0.000
+
+Type  : Fast Model Setup 'inst14|mypll|altpll_component|pll|clk[0]'
+Slack : 36.068
+TNS   : 0.000
+
+Type  : Fast Model Hold 'CLOCK_50'
+Slack : -1.564
+TNS   : -3.042
+
+Type  : Fast Model Hold 'inst14|mypll|altpll_component|pll|clk[0]'
+Slack : 0.238
+TNS   : 0.000
+
+Type  : Fast Model Hold 'score:inst8|freq_divider_1hz:comb_3|out'
+Slack : 0.240
+TNS   : 0.000
+
+Type  : Fast Model Hold 'fsm:inst19|y_Q.I'
+Slack : 3.174
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'fsm:inst19|y_Q.I'
+Slack : -2.154
+TNS   : -2.154
+
+Type  : Fast Model Recovery 'CLOCK_50'
+Slack : 18.933
+TNS   : 0.000
+
+Type  : Fast Model Removal 'CLOCK_50'
+Slack : 0.897
+TNS   : 0.000
+
+Type  : Fast Model Removal 'fsm:inst19|y_Q.I'
+Slack : 2.451
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'score:inst8|freq_divider_1hz:comb_3|out'
+Slack : -0.500
+TNS   : -16.000
+
+Type  : Fast Model Minimum Pulse Width 'fsm:inst19|y_Q.I'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
+Slack : 7.620
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'inst14|mypll|altpll_component|pll|clk[0]'
+Slack : 17.873
+TNS   : 0.000
+
+------------------------------------------------------------

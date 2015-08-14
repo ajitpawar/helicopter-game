@@ -1,0 +1,42 @@
+//finite-state machine
+module fsm (clock, resetn, drawingdone, delayed,
+		enablecounter, enableoffsetx, enableoffsety, erase, enabledelay, resetdelay);
+	input clock, resetn, drawingdone, delayed;
+	output enablecounter, enableoffsetx, enableoffsety, erase, enabledelay;
+	output resetdelay;
+	parameter A = 5'd0, B = 5'd1, C = 5'd2, D = 5'd3;
+	assign enablecounter = (y_Q==A || y_Q==C);
+	assign enableoffsetx = (y_Q==D);
+	assign enableoffsety =(y_Q==D);
+	assign enabledelay = (y_Q==B);
+	assign resetdelay=(y_Q==B);
+	assign erase = (y_Q==C);
+	reg [4:0] y_Q;
+	reg[4:0] Y_D;
+	
+	always @ (y_Q, drawingdone, delayed)
+	begin: state_table
+		case (y_Q)
+		A: if (!drawingdone) Y_D = A;
+			else Y_D = B;
+		B: if (!delayed) Y_D = B;
+			else Y_D = C;
+		C: if (!drawingdone) Y_D = C;
+			else Y_D = D;
+		D: Y_D = A;
+		default: Y_D = 5'bx;
+		endcase
+	end //state_table
+	
+	always @ (posedge clock or negedge resetn)
+	begin: state_FFs
+		if (!resetn)
+		begin
+			y_Q <= A;
+		end
+		else
+		begin
+			y_Q <= Y_D;
+		end
+	end //state_FFs
+endmodule

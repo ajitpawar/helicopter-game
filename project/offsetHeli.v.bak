@@ -1,0 +1,39 @@
+module offsetHeli (clk, resetn, enable, out, increase, decrease);
+	input clk;
+	input resetn;
+	input enable;
+	input increase;
+	input decrease;
+	output reg [n:0] out;
+		
+	parameter n = 6;
+
+	always @ (posedge clk or negedge resetn)
+	begin
+		if (!resetn)
+		begin
+			out <= 0;
+		end
+		else if (!enable)
+		begin
+			out <= out;
+		end
+		else
+		begin
+			if (increase)
+			begin
+				out <= out + 1;
+			end
+			else if (decrease)
+			begin
+				out <= out - 1;
+			end
+			else
+			begin
+				out <= out;
+			end
+		end
+	end
+
+endmodule
+

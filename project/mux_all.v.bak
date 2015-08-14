@@ -1,0 +1,30 @@
+module mux_all(select1, select2, colour1, x1, y1, colour2, x2, y2, colour, x, y);
+
+	input [2:0] colour1, colour2;
+	input [7:0] x1,x2;
+	input select1, select2;
+	input [6:0] y1,y2;
+	output reg [2:0] colour;
+	output reg [7:0] x;
+	output reg [6:0] y;
+
+	always@(*)
+		if (select1 == 1 && select2 == 0)
+			begin
+			colour <= colour1;
+			x <= x1;
+			y <= y1;
+			end
+		else if (select1 == 0 && select2 ==1 )
+			begin
+			colour <= colour2;
+			x <= x2;
+			y <= y2;
+			end
+		else 
+			begin
+			colour <= 3'b000;
+			x <= 0;
+			y <= 0;
+			end
+endmodule

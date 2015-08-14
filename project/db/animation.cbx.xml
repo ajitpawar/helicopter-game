@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="animation">
+		<CBX_INST_ENTRY INSTANCE_NAME="|animation|vga_adapter:inst14|altsyncram:VideoMemory" CBX_FILE_NAME="altsyncram_ncg1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

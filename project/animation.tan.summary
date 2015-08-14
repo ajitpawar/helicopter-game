@@ -1,0 +1,66 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 10.166 ns
+From           : vga_adapter:inst14|altsyncram:VideoMemory|altsyncram_ncg1:auto_generated|altsyncram_n6r1:altsyncram1|ram_block2a5
+To             : VGA_R[0]
+From Clock     : CLOCK_50
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'CLOCK_50'
+Slack          : 11.245 ns
+Required Time  : 50.00 MHz ( period = 20.000 ns )
+Actual Time    : 114.22 MHz ( period = 8.755 ns )
+From           : counter:inst|addr[0]
+To             : vga_adapter:inst14|altsyncram:VideoMemory|altsyncram_ncg1:auto_generated|altsyncram_n6r1:altsyncram1|ram_block2a0~portb_we_reg
+From Clock     : CLOCK_50
+To Clock       : CLOCK_50
+Failed Paths   : 0
+
+Type           : Clock Setup: 'vga_adapter:inst14|vga_pll:mypll|altpll:altpll_component|_clk0'
+Slack          : 32.539 ns
+Required Time  : 25.00 MHz ( period = 40.000 ns )
+Actual Time    : 134.03 MHz ( period = 7.461 ns )
+From           : vga_adapter:inst14|vga_controller:controller|yCounter[4]
+To             : vga_adapter:inst14|altsyncram:VideoMemory|altsyncram_ncg1:auto_generated|altsyncram_n6r1:altsyncram1|ram_block2a10~porta_address_reg11
+From Clock     : vga_adapter:inst14|vga_pll:mypll|altpll:altpll_component|_clk0
+To Clock       : vga_adapter:inst14|vga_pll:mypll|altpll:altpll_component|_clk0
+Failed Paths   : 0
+
+Type           : Clock Hold: 'CLOCK_50'
+Slack          : 0.391 ns
+Required Time  : 50.00 MHz ( period = 20.000 ns )
+Actual Time    : N/A
+From           : delayer:inst1|count[0]
+To             : delayer:inst1|count[0]
+From Clock     : CLOCK_50
+To Clock       : CLOCK_50
+Failed Paths   : 0
+
+Type           : Clock Hold: 'vga_adapter:inst14|vga_pll:mypll|altpll:altpll_component|_clk0'
+Slack          : 0.516 ns
+Required Time  : 25.00 MHz ( period = 40.000 ns )
+Actual Time    : N/A
+From           : vga_adapter:inst14|vga_controller:controller|VGA_VS1
+To             : vga_adapter:inst14|vga_controller:controller|VGA_VS
+From Clock     : vga_adapter:inst14|vga_pll:mypll|altpll:altpll_component|_clk0
+To Clock       : vga_adapter:inst14|vga_pll:mypll|altpll:altpll_component|_clk0
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

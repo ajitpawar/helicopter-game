@@ -1,0 +1,11 @@
+module levels(clk, resetn, enable, collision, score, level);
+	input clk, resetn, enable, collision;
+	input [15:0] score;
+	output reg level;
+
+	always @ (score)
+	begin
+		
+	end
+	
+endmodule

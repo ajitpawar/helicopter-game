@@ -1,0 +1,28 @@
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>AFC</sub_system>
+	<file>/quartus/gcl/afc/afc_editor_template.cpp</file>
+	<line>978</line>
+	<callstack>
+	0x10007c9e: GCL_AFC + 0x7c9e (?get_compile_short_menu@AFC_EDITOR_TEMPLATE@@UAEPAUHMENU__@@XZ + 0x3e)
+	</callstack>
+	<error>Not enough memory to complete operation</error>
+	<date>Sun Nov 04 01:01:24 2007</date>
+	<version>Quartus II Version 7.1 Build 156 04/30/2007 SJ Web Edition</version>
+	<full_error>Not enough memory to complete operation
+Quartus II Version 7.1 Build 156 04/30/2007 SJ Web Edition </full_error>
+</internal_error>
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>AFC</sub_system>
+	<file>/quartus/gcl/afc/afc_editor_template.cpp</file>
+	<line>978</line>
+	<callstack>
+	0x10007c9e: GCL_AFC + 0x7c9e (?get_compile_short_menu@AFC_EDITOR_TEMPLATE@@UAEPAUHMENU__@@XZ + 0x3e)
+	</callstack>
+	<error>Not enough memory to complete operation</error>
+	<date>Sun Nov 04 08:23:43 2007</date>
+	<version>Quartus II Version 7.1 Build 156 04/30/2007 SJ Web Edition</version>
+	<full_error>Not enough memory to complete operation
+Quartus II Version 7.1 Build 156 04/30/2007 SJ Web Edition </full_error>
+</internal_error>

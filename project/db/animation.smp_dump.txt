@@ -1,0 +1,15 @@
+
+State Machine - |animation|fsm:inst19|y_Q
+Name y_Q.Z y_Q.X y_Q.J y_Q.I y_Q.H y_Q.F y_Q.E y_Q.D y_Q.C y_Q.B y_Q.A y_Q.G 
+y_Q.A 0 0 0 0 0 0 0 0 0 0 0 0 
+y_Q.B 0 0 0 0 0 0 0 0 0 1 1 0 
+y_Q.C 0 0 0 0 0 0 0 0 1 0 1 0 
+y_Q.D 0 0 0 0 0 0 0 1 0 0 1 0 
+y_Q.E 0 0 0 0 0 0 1 0 0 0 1 0 
+y_Q.F 0 0 0 0 0 1 0 0 0 0 1 0 
+y_Q.G 0 0 0 0 0 0 0 0 0 0 1 1 
+y_Q.H 0 0 0 0 1 0 0 0 0 0 1 0 
+y_Q.I 0 0 0 1 0 0 0 0 0 0 1 0 
+y_Q.J 0 0 1 0 0 0 0 0 0 0 1 0 
+y_Q.X 0 1 0 0 0 0 0 0 0 0 1 0 
+y_Q.Z 1 0 0 0 0 0 0 0 0 0 1 0 

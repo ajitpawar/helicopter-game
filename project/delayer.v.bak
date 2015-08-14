@@ -1,0 +1,61 @@
+//delayer
+
+module delayer (clk, resetn, enable, done);
+	input clk, resetn, enable;
+	output reg done;
+	reg [24:0] count;
+	always @ (posedge clk or negedge resetn)
+	begin
+		if (!resetn)
+		begin
+			count <= 0;
+			done <= 0;
+		end
+		else if (!enable)
+		begin
+			count <= count;
+			done <= 0;
+		end
+		else
+		begin
+			if (count < 25'd10000000)
+			begin
+				count <= count + 1;
+				done <= 0;
+			end
+			else
+			begin
+				count <= count;
+				done <= 1;
+			end
+		end
+	end
+endmodule
+
+/*module delayer(clock,reset,finish);
+input clock,reset;
+output finish;
+parameter signal=30'd20000000;
+reg [31:0]count;
+always@(posedge clock)
+	begin
+		if(!reset)
+			begin
+				count<=0;
+			end
+		else
+			begin
+				if(finish)
+					begin
+						count<=0;
+					end
+				else
+					begin
+						count<=count+1;
+					end
+			end
+	end
+assign finish=(count==signal);
+
+endmodule
+*/
